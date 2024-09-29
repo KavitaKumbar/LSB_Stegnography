@@ -1,0 +1,17 @@
+Project LSB Stegnography
+
+1: The application accepts an image file say .bmp along with a text file that contains the message to be steged
+2: Analyze the size of the message file to check whether the message could fit in the provided .bmp image
+   Provide an option to steg a magic string which could be useful to identify whether the image is steged or not
+3: The application should provide an option to decrypt the file
+4: This has to be a command-line application and all the options have to be passed as a command-line argument
+
+Command line arguments to be passed
+
+step 1: Compile all the file with .c extension 
+         gcc *.c
+step 2: CLA for Encoding
+         ./a.out -e image_name.bmp  secretfile.extension  [stego_image.bmp]optional;
+
+         CLA for Decoding
+         ./a.out -d stego_image.bmp [outputfile]optional
